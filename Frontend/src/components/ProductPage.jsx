@@ -25,7 +25,7 @@ const ProductPage = () => {
   useEffect(() => {
     const fetchProduct = async () => {
       try {
-        const response = await fetch('http://localhost:5000/api/product');
+        const response = await fetch('https://playshifu-clone.onrender.com/api/product');
         if (!response.ok) throw new Error('Failed to fetch product data');
         const data = await response.json();
         setProduct(data);

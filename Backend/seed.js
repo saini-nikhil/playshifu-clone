@@ -1,8 +1,7 @@
 const mongoose = require("mongoose");
 require("dotenv").config();
 
-const Product = require("./product.model"); // Adjust the path as necessary
-
+const Product = require("./product.model");
 const dummyProduct = {
   name: "Junior Genius Pack",
   price: 99.99,
@@ -251,10 +250,7 @@ const dummyProduct = {
 };
 
 mongoose
-  .connect(process.env.MONGODB_URI || "mongodb://localhost:27017/playshifu", {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-  })
+  .connect(process.env.MONGODB_URI)
   .then(() => {
     console.log("Connected to MongoDB");
     return Product.deleteMany({});
