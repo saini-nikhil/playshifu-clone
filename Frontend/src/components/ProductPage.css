@@ -500,8 +500,8 @@
     overflow-x: auto;
     padding: 10px 0;
     margin-bottom: 1.5rem;
-    scrollbar-width: thin;
-    scrollbar-color: #cbd5e0 #f7fafc;
+    /* scrollbar-width: thin;
+    scrollbar-color: #cbd5e0 #f7fafc; */
   }
   
   .media-thumbnails::-webkit-scrollbar {
@@ -830,7 +830,7 @@
     overflow-x: auto;
     gap: 1rem;
     padding: 1rem 0;
-    scrollbar-width: none;
+    /* scrollbar-width: none; */
   }
   
   .video-slider::-webkit-scrollbar {
@@ -1727,7 +1727,7 @@
       overflow-x: auto;
       justify-content: flex-start;
       -ms-overflow-style: none;
-      scrollbar-width: none;
+      /* scrollbar-width: none; */
       padding: 0;
     }
     
